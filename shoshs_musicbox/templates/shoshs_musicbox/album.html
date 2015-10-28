@@ -1,0 +1,9 @@
+{% extends "shoshs_musicbox/base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+    <h1>{{ album.album_name }}</h1>
+    <img src="{{ album.album_cover.url }}" alt="Album Cover" height="200" width="200">
+    <p>{{ album.album_year }}</p>
+    <p>{{ album.album_review }}</p>
+{% endblock %}

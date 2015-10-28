@@ -1,0 +1,17 @@
+{% extends "shoshs_musicbox/base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+    <h1>A list of blogs will go here</h1>
+
+    <h2>Please select an artist from the list:</h2>
+    {% if blog_list %}
+       {% for blog in blog_list %}
+         <ul>
+             <li><a href="{% url 'musicbox:blog' blog.id %}">{{ blog.blog_title }}</a></li>
+         </ul>
+       {% endfor %}
+    {% else %}
+         <p>No blogs are available.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "shoshs_musicbox/base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+    <h1>Artist list will go on this page.</h1>
+
+    <h2>Please select an artist from the list:</h2>
+    {% if artist_list %}
+       {% for artist in artist_list %}
+         <ul>
+             <li><a href="{% url 'musicbox:artist' artist.id %}">{{ artist.artist_name }}</a></li>
+         </ul>
+       {% endfor %}
+    {% else %}
+         <p>No artists are available.</p>
+    {% endif %}
+{% endblock %}

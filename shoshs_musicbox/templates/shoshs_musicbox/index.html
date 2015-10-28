@@ -1,0 +1,11 @@
+{% extends "shoshs_musicbox/base.html" %}
+{% load staticfiles %}
+
+
+{% block body %}
+<h1>Shosh's Musicbox</h1>
+<ul>
+    <li><a href="{% url 'artist_library' %}">View the artist library</a></li>
+    <li><a href="{% url 'blog_list' %}">View the list of blogs.</a></li>
+</ul>
+{% endblock %}

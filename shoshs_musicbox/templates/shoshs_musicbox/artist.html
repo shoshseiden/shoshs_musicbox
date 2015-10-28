@@ -1,0 +1,12 @@
+{% extends "shoshs_musicbox/base.html" %}
+{% load staticfiles %}
+
+{% block body %}
+    <h1>This will contain an album list of the chosen artist.</h1>
+
+    <ul>
+      {% for album in artist.album_set.all %}
+        <li><a href="{% url 'shoshs_musicbox:album' artist.id album.id %}">{{ album.album_name }}</a></li>
+      {% endfor %}
+    </ul>
+{% endblock %}

@@ -6,7 +6,7 @@
 
     <ul>
       {% for album in artist.album_set.all %}
-        <li><a href="{% url 'shoshs_musicbox:album' artist.id album.id %}">{{ album.album_name }}</a></li>
+        <li><a href="{% url 'album' artist.id album.id %}">{{ album.album_name }}</a></li>
       {% endfor %}
     </ul>
 {% endblock %}

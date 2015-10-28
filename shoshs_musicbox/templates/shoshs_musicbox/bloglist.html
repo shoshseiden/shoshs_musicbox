@@ -8,7 +8,7 @@
     {% if blog_list %}
        {% for blog in blog_list %}
          <ul>
-             <li><a href="{% url 'musicbox:blog' blog.id %}">{{ blog.blog_title }}</a></li>
+             <li><a href="{% url 'blog' blog.id %}">{{ blog.blog_title }}</a></li>
          </ul>
        {% endfor %}
     {% else %}

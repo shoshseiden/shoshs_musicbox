@@ -9,8 +9,25 @@
 
  p{
    color: green;
+   font-family: serif;
  }
 
  ul{
    list-style-type: none;
  }
+
+a{
+  color: blue;
+  font-family: serif;
+  font-style: normal;
+}
+
+a:visited{
+  color: orange;
+  font-style: italic;
+}
+
+h1{
+  color: yellow;
+  font-family: serif;
+}

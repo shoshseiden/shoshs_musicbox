@@ -10,6 +10,13 @@
  p{
    color: green;
    font-family: serif;
+
+   border-color: blue;
+   border: 10px 15px;
+   border-style: solid;
+   padding: 10px 15px;
+   background-color: black;
+   
  }
 
  ul{

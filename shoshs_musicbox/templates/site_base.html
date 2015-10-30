@@ -3,10 +3,13 @@
 {% load staticfiles %}
 {% load i18n %}
 
-
-{# remove to bring back topbar #}
-{% block topbar_base %}{% endblock %}
-
+{% block nav %}
+    <ul class="nav navbar-nav">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'artist_library' %}">Artists</a></li>
+      <li><a href="{% url 'blog_list' %}">Blog</a></li>
+    </ul>
+{% endblock %}
 
 {% block styles %}
     {% include "_styles.html" %}

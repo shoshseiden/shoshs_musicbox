@@ -1,3 +1,4 @@
 Django==1.8.4
 pinax-theme-bootstrap==7.1.0
 Pillow
+dj-static==0.0.6

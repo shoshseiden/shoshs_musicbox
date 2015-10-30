@@ -10,13 +10,6 @@
  p{
    color: green;
    font-family: serif;
-
-   border-color: blue;
-   border: 10px 15px;
-   border-style: solid;
-   padding: 10px 15px;
-   background-color: black;
-   
  }
 
  ul{
@@ -30,11 +23,28 @@ a{
 }
 
 a:visited{
-  color: orange;
+  color: green;
   font-style: italic;
 }
 
 h1{
   color: yellow;
   font-family: serif;
+}
+
+h2{
+  color: yellow;
+  font-family: serif;
+}
+
+body{
+  background-color: yellow;
+}
+
+section{
+  border-color: yellow ;
+  border: 10px 15px;
+  border-style: solid;
+  padding: 10px 15px;
+  background-color: orange;
 }

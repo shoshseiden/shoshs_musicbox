@@ -14,6 +14,7 @@ class Album(models.Model):
     album_name = models.CharField(max_length=50)
     album_year = models.IntegerField(null=True)
     album_review = models.TextField(null=True)
+    album_genre = models.CharField(max_length=25)
     album_cover = models.ImageField(upload_to='album_covers')
 
     def __str__(self):

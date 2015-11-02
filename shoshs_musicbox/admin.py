@@ -23,8 +23,8 @@ class ArtistAdmin(admin.ModelAdmin):
 class AlbumAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Images', {'fields': ['album_cover']}),
-        ('Album Information', {'fields': ['album_name', 'album_year',
-         'album_review']}),
+        ('Album Information', {'fields': ['album_name', 'album_genre',
+         'album_year', 'album_review']}),
     ]
     inlines = [TrackInline]
 

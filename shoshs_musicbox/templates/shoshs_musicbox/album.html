@@ -4,6 +4,7 @@
 {% block body %}
     <h1>{{ album.album_name }}</h1>
     <img src="{{ album.album_cover.url }}" alt="Album Cover" height="200" width="200">
+    <p>Genre: {{ album.album_genre }}
     <p>Year Released: {{ album.album_year }}</p>
     <h2>Track List:</h2>
     {% for track in album.track_set.all %}

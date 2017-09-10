@@ -8,7 +8,11 @@
     <p>Year Released: {{ album.album_year }}</p>
     <h2>Track List:</h2>
     {% for track in album.track_set.all %}
-        <p>{{ track.track_number }}. {{ track.track_title }}</p>
+        {% if track.youtube_link %}
+        <li><a href="{{ track.youtube_link}}">{{ track.track_number}}. {{ track.track_title}}</a></li>
+        {% else %}
+        <li><p>{{ track.track_number }}. {{ track.track_title }}</p><li>
+        {% endif %}
     {% endfor %}
     <h2>Review:</h2>
     <p>{{ album.album_review }}</p>

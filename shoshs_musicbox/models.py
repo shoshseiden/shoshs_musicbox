@@ -25,6 +25,7 @@ class Track(models.Model):
     album = models.ForeignKey(Album)
     track_title = models.CharField(max_length=100)
     track_number = models.IntegerField(null=True)
+    youtube_link = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
         return self.track_title
